@@ -1,5 +1,3 @@
-## 0.0.3
+## 0.0.4
  
-1. **Fix Warnings**
-    - Resolved various warnings to improve code quality and stability.
-2. **Update README**
+1. **Update screenshots**
