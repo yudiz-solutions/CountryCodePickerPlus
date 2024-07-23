@@ -1,8 +1,8 @@
-![GitHub code size](https://img.shields.io/github/languages/code-size/YudizAndroidNareshP/CountryCodePickerPlus)
+![GitHub code size](https://img.shields.io/github/languages/code-size/yudiz-solutions/CountryCodePickerPlus)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-![GitHub contributors](https://img.shields.io/github/contributors/YudizAndroidNareshP/CountryCodePickerPlus)
+![GitHub contributors](https://img.shields.io/github/contributors/yudiz-solutions/CountryCodePickerPlus)
 [![Pub](https://img.shields.io/pub/v/country_code_picker.svg)](https://pub.dartlang.org/packages/country_code_picker_plus)
 
 # country_code_picker_plus
@@ -19,7 +19,7 @@ allowing developers to tailor the picker to their specific needs. Whether you wa
 flags, search for countries, or present the picker in different styles, `country_code_picker_plus`
 has you covered.
 
-<img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_country_code_picker.gif" width="240"/>
+<img src="https://raw.githubusercontent.com/yudiz-solutions/CountryCodePickerPlus/main/screenshot/example_country_code_picker.gif" width="240"/>
 
 ## Sample Code
 
@@ -49,9 +49,9 @@ customization options:
 This table provides a concise description of the different modes available for
 the `CountryCodePickerMode` property.
 
-|<img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/ss_dialog.png" width="240"/>|<img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/ss_dropdown.png" width="240"/>|<img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/ss_bottom_sheet.png" width="240"/>|
-|:---------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------:|
-|                                                    `'CountryCodePickerMode.dialog'`                                                     |                                                    `'CountryCodePickerMode.dropdown'`                                                     |                                                     `'CountryCodePickerMode.bottomSheet'`                                                     |
+| <img src="https://raw.githubusercontent.com/yudiz-solutions/CountryCodePickerPlus/main/screenshot/ss_dialog.png" width="240"/> |<img src="https://raw.githubusercontent.com/yudiz-solutions/CountryCodePickerPlus/development/screenshot/ss_dropdown.png" width="240"/>|<img src="https://raw.githubusercontent.com/yudiz-solutions/CountryCodePickerPlus/development/screenshot/ss_bottom_sheet.png" width="240"/>|
+|:----------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------:|
+|                                                  `'CountryCodePickerMode.dialog'`                                                  |                                                    `'CountryCodePickerMode.dropdown'`                                                     |                                                     `'CountryCodePickerMode.bottomSheet'`                                                     |
 
 ## Other Properties
 
@@ -115,7 +115,7 @@ debugPrint('Invalid phone number');
 })
 ```
 
-<img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_phone_input_field.gif" width="240"/>
+<img src="https://raw.githubusercontent.com/yudiz-solutions/CountryCodePickerPlus/development/screenshot/example_phone_input_field.gif" width="240"/>
 
 ---
 
@@ -138,7 +138,7 @@ First of all, thank you for considering to get involved. You are a real supersta
 
 ### Reporting Bugs and Issues
 
-Use the configured [Github issue report template](https://github.com/YudizAndroidNareshP/CountryCodePickerPlus/issues/new?assignees=&labels=&template=bug_report.md&title=) when reporting an issue. Make sure to clearly state your observations and expectations so we can understand your needs and troubleshoot effectively.
+Use the configured [Github issue report template](https://github.com/yudiz-solutions/CountryCodePickerPlus/issues/new?assignees=&labels=&template=bug_report.md&title=) when reporting an issue. Make sure to clearly state your observations and expectations so we can understand your needs and troubleshoot effectively.
 
 ### Discussions and Ideas
 
