@@ -1,3 +1,10 @@
+![GitHub code size](https://img.shields.io/github/languages/code-size/YudizAndroidNareshP/CountryCodePickerPlus)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+![GitHub contributors](https://img.shields.io/github/contributors/YudizAndroidNareshP/CountryCodePickerPlus)
+[![Pub](https://img.shields.io/pub/v/country_code_picker.svg)](https://pub.dartlang.org/packages/country_code_picker_plus)
+
 # country_code_picker_plus
 
 A Flutter package that provides an easy-to-use widget for picking country codes. This widget
