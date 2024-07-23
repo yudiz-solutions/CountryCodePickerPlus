@@ -1,7 +1,6 @@
 name: country_code_picker_plus
 description: "CountryCodePickerPlus is a Flutter package that simplifies the process of capturing phone numbers with country codes."
 version: 0.0.3
-author: Yudiz Solutions Limited<naresh.prajapati@yudiz.com>
 homepage: https://github.com/yudiz-solutions/CountryCodePickerPlus
 
 environment:
