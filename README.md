@@ -13,7 +13,6 @@ flags, search for countries, or present the picker in different styles, `country
 has you covered.
 
 <img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_country_code_picker.gif" width="240"/>
-<img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_phone_input_field.gif" width="240"/>
 
 ## Sample Code
 
@@ -108,6 +107,8 @@ debugPrint('Invalid phone number');
 }
 })
 ```
+
+<img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_phone_input_field.gif" width="240"/>
 
 ---
 
