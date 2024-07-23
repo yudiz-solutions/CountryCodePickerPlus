@@ -12,13 +12,8 @@ allowing developers to tailor the picker to their specific needs. Whether you wa
 flags, search for countries, or present the picker in different styles, `country_code_picker_plus`
 has you covered.
 
-## Images
-**Country Code Picker**
-![CountryCodePicker](https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_country_code_picker.gif)
-
-**Phone Input Field**
-![PhoneInputField](https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_phone_input_field.gif)
-
+<img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_country_code_picker.gif" width="240"/>
+<img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_phone_input_field.gif" width="240"/>
 
 ## Sample Code
 
