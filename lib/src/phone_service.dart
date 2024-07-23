@@ -9,7 +9,7 @@ class PhoneService {
   static List<Country> getPotentialCountries(
       String number, List<Country> countries) {
     List<Country> result = [];
-    if (number.length > 0 && number.length < 5) {
+    if (number.isNotEmpty && number.length < 5) {
       List<String> potentialCodes =
           generatePotentialDialCodes(number, 0, number.length);
       for (var code in potentialCodes) {
@@ -61,7 +61,6 @@ class PhoneService {
     try {
       return await PhoneNumberUtil.normalizePhoneNumber(number, iso);
     } catch (e) {
-      print(e);
       return null;
     }
   }

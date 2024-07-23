@@ -126,9 +126,7 @@ snippet on how to use it.
 
 Contributions of any kind are more than welcome! Feel free to fork and improve
 country_code_picker_plus
-in any way you want, make a pull request, or open an issue.
-
-Sure, here is the section you can add to your README file for company details:
+in any way you want, make a pull request, or open an issue. 
 
 ---
 
