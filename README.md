@@ -124,9 +124,17 @@ Sure, here is the section you can add to your README file for company details:
 
 ---
 
-## Company
+## Getting Involved
 
-**Yudiz Solutions Limited**  
-Website: [https://www.yudiz.com/](https://www.yudiz.com/)
+First of all, thank you for considering to get involved. You are a real superstar ⭐ and we ❤️ you!
+
+### Reporting Bugs and Issues
+
+Use the configured [Github issue report template](https://github.com/YudizAndroidNareshP/CountryCodePickerPlus/issues/new?assignees=&labels=&template=bug_report.md&title=) when reporting an issue. Make sure to clearly state your observations and expectations so we can understand your needs and troubleshoot effectively.
+
+### Discussions and Ideas
+
+We're happy to discuss and talk about ideas. Post your questions on [StackOverflow](https://stackoverflow.com/search?q=country+code+picker+plus).
 
 ---
+
