@@ -1,5 +1,5 @@
 name: country_code_picker_plus
-description: "CountryCodePickerPlus is a Flutter package that simplifies the process of capturing phone numbers with country codes. This package provides an easy-to-use input field that allows users to select their country from a dropdown and enter their phone number. IntlPhoneField ensures proper formatting and validation of phone numbers, making it ideal for international applications. With customizable options and a user-friendly interface, this package enhances the user experience and streamlines phone number input in your Flutter app."
+description: "CountryCodePickerPlus is a Flutter package that simplifies the process of capturing phone numbers with country codes."
 version: 0.0.1
 author: Yudiz Solutions Limited<naresh.prajapati@yudiz.com>
 homepage: https://github.com/yudiz-solutions/CountryCodePickerPlus
