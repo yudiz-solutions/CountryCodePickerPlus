@@ -247,7 +247,7 @@ class CountryCodePickerState extends State<CountryCodePicker> {
                         ? const EdgeInsets.only(right: 16.0, left: 8.0)
                         : const EdgeInsets.only(right: 16.0),
                     child: Image.asset(
-                      selectedItem!.flagUri!,
+                      selectedItem!.flagUri,
                       package: 'country_code_picker_plus',
                       width: widget.flagWidth,
                     ),
@@ -301,10 +301,10 @@ class CountryCodePickerState extends State<CountryCodePicker> {
       if (widget.initialSelection != null) {
         selectedItem = elements.firstWhere(
             (criteria) =>
-                (criteria.code!.toUpperCase() ==
+                (criteria.code.toUpperCase() ==
                     widget.initialSelection!.toUpperCase()) ||
                 (criteria.dialCode == widget.initialSelection) ||
-                (criteria.name!.toUpperCase() ==
+                (criteria.name.toUpperCase() ==
                     widget.initialSelection!.toUpperCase()),
             orElse: () => elements[0]);
       } else {
@@ -321,10 +321,10 @@ class CountryCodePickerState extends State<CountryCodePicker> {
     if (widget.initialSelection != null) {
       selectedItem = elements.firstWhere(
           (item) =>
-              (item.code!.toUpperCase() ==
+              (item.code.toUpperCase() ==
                   widget.initialSelection!.toUpperCase()) ||
               (item.dialCode == widget.initialSelection) ||
-              (item.name!.toUpperCase() ==
+              (item.name.toUpperCase() ==
                   widget.initialSelection!.toUpperCase()),
           orElse: () => elements[0]);
     } else {
@@ -334,9 +334,9 @@ class CountryCodePickerState extends State<CountryCodePicker> {
     favoriteElements = elements
         .where((item) =>
             widget.favorite.firstWhereOrNull((criteria) =>
-                item.code!.toUpperCase() == criteria.toUpperCase() ||
+                item.code.toUpperCase() == criteria.toUpperCase() ||
                 item.dialCode == criteria ||
-                item.name!.toUpperCase() == criteria.toUpperCase()) !=
+                item.name.toUpperCase() == criteria.toUpperCase()) !=
             null)
         .toList();
   }
