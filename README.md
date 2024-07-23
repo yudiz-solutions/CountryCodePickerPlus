@@ -43,7 +43,7 @@ customization options:
 This table provides a concise description of the different modes available for
 the `CountryCodePickerMode` property.
 
-| ![Image](https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/ss_dialog.png) | ![Image](https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/ss_dropdown.png) | ![Image](https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/ss_bottom_sheet.png) |
+| <img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/ss_dialog.png" width="240"/> | <img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/ss_dropdown.png" width="240"/> | <img src="https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/ss_bottomSheet.png" width="240"/> |
 |:--------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |                                              `'CountryCodePickerMode.dialog'`                                              |                                              `'CountryCodePickerMode.dropdown'`                                              |                             `'CountryCodePickerMode.bottomSheet'`                             |
 
