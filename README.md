@@ -13,12 +13,12 @@ flags, search for countries, or present the picker in different styles, `country
 has you covered.
 
 ## Images
-
+**Country Code Picker**
 ![CountryCodePicker](https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_country_code_picker.gif)
-*Country Code Picker*
 
+**Phone Input Field**
 ![PhoneInputField](https://raw.githubusercontent.com/YudizAndroidNareshP/CountryCodePickerPlus/development/screenshot/example_phone_input_field.gif)
-*Phone Input Field* 
+
 
 ## Sample Code
 
