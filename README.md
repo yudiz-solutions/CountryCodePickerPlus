@@ -1,7 +1,5 @@
 ![GitHub code size](https://img.shields.io/github/languages/code-size/yudiz-solutions/CountryCodePickerPlus)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-    [![All Contributors](https://img.shields.io/github/all-contributors/yudiz-solutions/CountryCodePickerPlus)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![All Contributors](https://img.shields.io/github/all-contributors/yudiz-solutions/CountryCodePickerPlus)](#contributors-)
 [![Pub](https://img.shields.io/pub/v/country_code_picker.svg)](https://pub.dartlang.org/packages/country_code_picker_plus)
 
 # country_code_picker_plus
