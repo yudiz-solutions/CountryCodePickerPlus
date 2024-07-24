@@ -13,7 +13,6 @@ class PhoneNumber {
 
   PhoneNumber(this.number, this.internationalizedPhoneNumber, this.country);
 
-
   @override
   String toString() {
     // TODO: implement toString

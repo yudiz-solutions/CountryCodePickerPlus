@@ -1,7 +1,9 @@
 name: country_code_picker_plus
 description: "CountryCodePickerPlus is a Flutter package that simplifies the process of capturing phone numbers with country codes."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/yudiz-solutions/CountryCodePickerPlus
+issue_tracker: https://github.com/yudiz-solutions/CountryCodePickerPlus/issues
+
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
@@ -19,6 +21,22 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^3.0.0
 
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
+topics:
+  - country code picker
+  - phone number validation
+  - phone number formatting
+  - Flutter
+  - mobile development
+  - internationalization
+
 screenshots:
   - description: A package that provides an easy-to-use widget for picking country codes
     path: screenshot/example_country_code_picker.gif
@@ -31,11 +49,6 @@ screenshots:
   - description: Shows the country picker as a dropdown menu
     path: screenshot/ss_dropdown.png
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
-# The following section is specific to Flutter.
 flutter:
 
   uses-material-design: true
