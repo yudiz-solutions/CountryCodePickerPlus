@@ -30,12 +30,10 @@ platforms:
   windows:
 
 topics:
-  - country code picker
-  - phone number validation
-  - phone number formatting
-  - Flutter
-  - mobile development
-  - internationalization
+  - country-code-picker
+  - country-code-selector
+  - phone-number-input-field
+
 
 screenshots:
   - description: A package that provides an easy-to-use widget for picking country codes
