@@ -130,7 +130,7 @@ in any way you want, make a pull request, or open an issue.
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://all-contributors.js.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people ✨:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -152,7 +152,6 @@ Use the configured [Github issue report template](https://github.com/yudiz-solut
 ### Discussions and Ideas
 
 We're happy to discuss and talk about ideas. Post your questions on [StackOverflow](https://stackoverflow.com/search?q=country+code+picker+plus).
-
 
 ---
 
