@@ -128,6 +128,9 @@ Contributions of any kind are more than welcome! Feel free to fork and improve
 country_code_picker_plus
 in any way you want, make a pull request, or open an issue. 
 
+---
+
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://all-contributors.js.org/docs/en/emoji-key)):
@@ -145,8 +148,7 @@ Thanks goes to these wonderful people ([emoji key](https://all-contributors.js.o
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://all-contributors.js.org/) specification. Contributions of any kind welcome!
-    
----
+
 
 ## Getting Involved
 
