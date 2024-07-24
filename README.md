@@ -117,10 +117,10 @@ debugPrint('Invalid phone number');
 
 <img src="https://raw.githubusercontent.com/yudiz-solutions/CountryCodePickerPlus/development/screenshot/example_phone_input_field.gif" width="240"/>
 
----
-
 This section describes the `PhoneInputField` widget with its features and provides a sample code
 snippet on how to use it.
+
+---
 
 ## Contributions
 
@@ -128,6 +128,24 @@ Contributions of any kind are more than welcome! Feel free to fork and improve
 country_code_picker_plus
 in any way you want, make a pull request, or open an issue. 
 
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://all-contributors.js.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://all-contributors.js.org/) specification. Contributions of any kind welcome!
+    
 ---
 
 ## Getting Involved
