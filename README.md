@@ -105,7 +105,7 @@ if (isValid) {
 debugPrint('Phone number: ${phoneNUmber!.number}');
 debugPrint(
 'Internationalized phone number: ${phoneNUmber.internationalizedPhoneNumber}');
-debugPrint('ISO code: ${phoneNUmber.isoCode}');
+debugPrint('Country: ${phoneNUmber.country}');
 } else {
 debugPrint('Invalid phone number');
 }
