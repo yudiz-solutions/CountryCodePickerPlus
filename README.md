@@ -159,6 +159,11 @@ Use the configured [Github issue report template](https://github.com/yudiz-solut
 
 We're happy to discuss and talk about ideas. Post your questions on [StackOverflow](https://stackoverflow.com/search?q=country+code+picker+plus).
 
-
 ---
+
+## Visitors Count 
+<img align="left" src = "https://profile-counter.glitch.me/CountryCodePickerPlus/count.svg" alt ="Loading">
+
+
+
 
