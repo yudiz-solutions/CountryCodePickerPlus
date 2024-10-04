@@ -88,6 +88,24 @@ class CountryCodePicker extends StatefulWidget {
   final EdgeInsetsGeometry searchPadding;
   final CountryCodePickerMode mode;
 
+  /// The widget to use for the drop-down button's icon.
+  ///
+  /// Defaults to an [Icon] with the [Icons.arrow_drop_down] glyph.
+  final Widget? icon;
+  final Color? iconDisabledColor;
+  final Color? iconEnabledColor;
+  final double? iconSize;
+
+  final double? elevation;
+  final Color? shadowColor;
+  final Color? surfaceTintColor;
+  final Duration insetAnimationDuration;
+  final Curve insetAnimationCurve;
+  final EdgeInsets? insetPadding;
+  final Clip clipBehavior;
+  final ShapeBorder? shape;
+  final AlignmentGeometry? alignment;
+
   const CountryCodePicker({
     this.onChanged,
     this.onInit,
@@ -118,7 +136,7 @@ class CountryCodePicker extends StatefulWidget {
     this.countryFilter,
     this.hideSearch = false,
     this.hideCloseIcon = false,
-    this.showDropDownButton = false,
+    this.showDropDownButton = true,
     this.dialogSize,
     this.dialogBackgroundColor,
     this.closeIcon = const Icon(Icons.close),
@@ -128,6 +146,19 @@ class CountryCodePicker extends StatefulWidget {
     this.searchPadding = const EdgeInsets.symmetric(horizontal: 24),
     super.key,
     this.mode = CountryCodePickerMode.dialog,
+    this.icon,
+    this.iconDisabledColor,
+    this.iconEnabledColor,
+    this.iconSize,
+    this.elevation,
+    this.shadowColor,
+    this.surfaceTintColor,
+    this.insetAnimationDuration = const Duration(milliseconds: 100),
+    this.insetAnimationCurve = Curves.decelerate,
+    this.insetPadding,
+    this.clipBehavior = Clip.none,
+    this.shape,
+    this.alignment,
   });
 
   @override
@@ -171,9 +202,12 @@ class CountryCodePickerState extends State<CountryCodePicker> {
     if (widget.mode == CountryCodePickerMode.dropdown) {
       return DropdownButtonHideUnderline(
         child: DropdownButton<Country>(
-          iconSize: widget.showDropDownButton ? 24.0 : 0.0,
+          iconSize: widget.showDropDownButton ? (widget.iconSize ?? 24.0) : 0.0,
           value: selectedItem,
           style: widget.textStyle ?? Theme.of(context).textTheme.labelLarge,
+          icon: widget.icon,
+          iconEnabledColor: widget.iconEnabledColor,
+          iconDisabledColor: widget.iconDisabledColor,
           items: elements
               .map((e) => DropdownMenuItem(
                     value: e,
@@ -273,11 +307,12 @@ class CountryCodePickerState extends State<CountryCodePicker> {
                       padding: widget.alignLeft
                           ? const EdgeInsets.only(right: 16.0, left: 8.0)
                           : const EdgeInsets.only(right: 16.0),
-                      child: Icon(
-                        Icons.arrow_drop_down,
-                        color: Colors.grey,
-                        size: widget.flagWidth,
-                      )),
+                      child: widget.icon ??
+                          Icon(
+                            Icons.arrow_drop_down,
+                            color: Colors.grey,
+                            size: widget.flagWidth,
+                          )),
                 ),
             ],
           ),
@@ -344,6 +379,10 @@ class CountryCodePickerState extends State<CountryCodePicker> {
   Future<dynamic> _showCountryCodeBottomSheet() async {
     return await showModalBottomSheet(
         context: context,
+        backgroundColor: widget.backgroundColor,
+        elevation: widget.elevation,
+        shape: widget.shape,
+        clipBehavior: widget.clipBehavior,
         builder: (BuildContext context) {
           return CountryCodePickerDialog(
             elements,
@@ -375,6 +414,15 @@ class CountryCodePickerState extends State<CountryCodePicker> {
       context: context,
       builder: (context) => Center(
         child: Dialog(
+          elevation: widget.elevation,
+          shadowColor: widget.shadowColor,
+          surfaceTintColor: widget.surfaceTintColor,
+          insetAnimationDuration: widget.insetAnimationDuration,
+          insetAnimationCurve: widget.insetAnimationCurve,
+          insetPadding: widget.insetPadding,
+          clipBehavior: widget.clipBehavior,
+          shape: widget.shape,
+          alignment: widget.alignment,
           child: CountryCodePickerDialog(
             elements,
             favoriteElements,

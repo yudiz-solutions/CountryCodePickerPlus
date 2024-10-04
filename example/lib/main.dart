@@ -253,6 +253,32 @@ class _ExampleState extends State<Example> {
                     border: Border.all(color: Colors.red, width: 2),
                     borderRadius: BorderRadius.circular(5),
                   ),
+                  shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5))),
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                'TextField 13 (change dropdown icon):',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+              _buildTextField(
+                CountryCodePicker(
+                  onChanged: (country) {
+                    _printCountryCode(country);
+                  },
+                  mode: CountryCodePickerMode.dropdown,
+                  initialSelection: 'ZA',
+                  boxDecoration: BoxDecoration(
+                    border: Border.all(color: Colors.red, width: 2),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+
+                  icon: const Icon(Icons.expand_more),
+                  iconDisabledColor: Colors.grey,
+                  iconEnabledColor: Colors.black,
+                  shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5))),
                 ),
               ),
               const SizedBox(height: 20),
