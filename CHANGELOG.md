@@ -1,3 +1,14 @@
+# Changelog
+
+## [0.1.0] - 2024-01-27
+* Added multi-language support for country names
+* Added dynamic language switching capability
+* Added built-in translation support for country names
+* Added language selection dropdown menu
+
+## 0.0.9
+* Update readme.md. : Add Banner
+
 ## 0.0.8
 * Update readme.md. : Add Banner
 
