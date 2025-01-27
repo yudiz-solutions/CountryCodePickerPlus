@@ -1,11 +1,145 @@
 import 'package:country_code_picker_plus/country_code_picker_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    home: Example(),
-  ));
+  runApp(const AppWrapper());
+}
+
+List<Locale> list = const [
+  Locale("af"),
+  Locale("am"),
+  Locale("ar"),
+  Locale("az"),
+  Locale("be"),
+  Locale("bg"),
+  Locale("bn"),
+  Locale("bs"),
+  Locale("ca"),
+  Locale("cs"),
+  Locale("da"),
+  Locale("de"),
+  Locale("el"),
+  Locale("en"),
+  Locale("es"),
+  Locale("et"),
+  Locale("fa"),
+  Locale("fi"),
+  Locale("fr"),
+  Locale("gl"),
+  Locale("ha"),
+  Locale("he"),
+  Locale("hi"),
+  Locale("hr"),
+  Locale("hu"),
+  Locale("hy"),
+  Locale("id"),
+  Locale("is"),
+  Locale("it"),
+  Locale("ja"),
+  Locale("ka"),
+  Locale("kk"),
+  Locale("km"),
+  Locale("ko"),
+  Locale("ku"),
+  Locale("ky"),
+  Locale("lt"),
+  Locale("lv"),
+  Locale("mk"),
+  Locale("ml"),
+  Locale("mn"),
+  Locale("ms"),
+  Locale("nb"),
+  Locale("nl"),
+  Locale("nn"),
+  Locale("no"),
+  Locale("pl"),
+  Locale("ps"),
+  Locale("pt"),
+  Locale("ro"),
+  Locale("ru"),
+  Locale("sd"),
+  Locale("sk"),
+  Locale("sl"),
+  Locale("so"),
+  Locale("sq"),
+  Locale("sr"),
+  Locale("sv"),
+  Locale("ta"),
+  Locale("tg"),
+  Locale("th"),
+  Locale("tk"),
+  Locale("tr"),
+  Locale("tt"),
+  Locale("uk"),
+  Locale("ug"),
+  Locale("ur"),
+  Locale("uz"),
+  Locale("vi"),
+  Locale("zh")
+];
+
+// Wrapper widget to manage app state
+class AppWrapper extends StatefulWidget {
+  const AppWrapper({super.key});
+
+  // Static method to access the state
+  static AppWrapperState of(BuildContext context) {
+    return context.findAncestorStateOfType<AppWrapperState>()!;
+  }
+
+  @override
+  State<AppWrapper> createState() => AppWrapperState();
+}
+
+class AppWrapperState extends State<AppWrapper> {
+  Locale _locale = const Locale('en');
+
+  // Method to change the locale
+  void setLocale(Locale locale) {
+    setState(() {
+      _locale = locale;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MyApp(locale: _locale);
+  }
+}
+
+// Main app widget
+class MyApp extends StatelessWidget {
+  final Locale locale;
+
+  const MyApp({
+    super.key,
+    required this.locale,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Country Picker Demo',
+      locale: locale,
+      // Use the passed locale
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        useMaterial3: true,
+      ),
+      localizationsDelegates: const [
+        // Required material delegates
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        // Your country localizations
+        CountryLocalizations.delegate,
+      ],
+      supportedLocales: list,
+      home: const Example(),
+    );
+  }
 }
 
 class Example extends StatefulWidget {
@@ -16,6 +150,8 @@ class Example extends StatefulWidget {
 }
 
 class _ExampleState extends State<Example> {
+  Locale currentLocale = const Locale('en');
+
   String message = "";
   String _selectedCountryCode1 = '+1';
 
@@ -45,6 +181,23 @@ class _ExampleState extends State<Example> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Country Code Picker Example'),
+        actions: [
+          // Language switcher
+          PopupMenuButton<Locale>(
+              onSelected: (Locale locale) {
+                setState(() {
+                  currentLocale = locale;
+                });
+                // Update app locale
+                AppWrapper.of(context).setLocale(locale);
+              },
+              itemBuilder: (BuildContext context) => list
+                  .map((local) => PopupMenuItem<Locale>(
+                        value: local,
+                        child: Text(local.languageCode.toUpperCase()),
+                      ))
+                  .toList()),
+        ],
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -273,7 +426,6 @@ class _ExampleState extends State<Example> {
                     border: Border.all(color: Colors.red, width: 2),
                     borderRadius: BorderRadius.circular(5),
                   ),
-
                   icon: const Icon(Icons.expand_more),
                   iconDisabledColor: Colors.grey,
                   iconEnabledColor: Colors.black,

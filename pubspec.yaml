@@ -54,6 +54,7 @@ flutter:
 
   assets:
     - assets/countries.json
+    - assets/i18n/
     - assets/flags/tg.png
     - assets/flags/me.png
     - assets/flags/la.png

@@ -1,5 +1,5 @@
 class Country {
-  final String name;
+  String name;
 
   final String flagUri;
 
@@ -29,5 +29,19 @@ class Country {
         code: json['alpha_2_code'],
         dialCode: json['dial_code'],
         flagUri: 'assets/flags/${json['alpha_2_code'].toLowerCase()}.png');
+  }
+
+  Country copyWith({
+    String? code,
+    String? name,
+    String? dialCode,
+    String? flagUri,
+  }) {
+    return Country(
+      code: code ?? this.code,
+      name: name ?? this.name,
+      dialCode: dialCode ?? this.dialCode,
+      flagUri: flagUri ?? this.flagUri,
+    );
   }
 }

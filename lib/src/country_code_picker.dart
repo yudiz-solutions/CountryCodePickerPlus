@@ -1,4 +1,5 @@
 import 'package:collection/collection.dart';
+import 'package:country_code_picker_plus/src/country_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:country_code_picker_plus/src/constants.dart';
 import 'package:country_code_picker_plus/src/country_code_picker_dialog.dart';
@@ -192,6 +193,7 @@ class CountryCodePickerState extends State<CountryCodePicker> {
   Country? selectedItem;
   List<Country> elements = [];
   List<Country> favoriteElements = [];
+  late List<Country> localizedElements; // Store localized country list
 
   CountryCodePickerState(this.elements);
 
@@ -325,7 +327,20 @@ class CountryCodePickerState extends State<CountryCodePicker> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+    _updateLocalizedList();
     _onInit(selectedItem);
+  }
+
+  void _updateLocalizedList() {
+    final localizations = CountryLocalizations.of(context);
+
+    if (localizations != null) {
+      // Create new list with localized names
+
+      for (var country in elements) {
+        country.name = localizations.getCountryName(country.code);
+      }
+    }
   }
 
   @override
