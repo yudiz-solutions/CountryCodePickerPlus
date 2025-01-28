@@ -425,7 +425,7 @@ class CountryCodePickerState extends State<CountryCodePicker> {
 
   Future<dynamic> _showCountryCodeDialog() async {
     return await showDialog(
-      barrierColor: widget.barrierColor ?? Colors.grey.withOpacity(0.5),
+      barrierColor: widget.barrierColor ?? Colors.grey.withValues(alpha: 0.5),
       context: context,
       builder: (context) => Center(
         child: Dialog(

@@ -8,76 +8,76 @@ void main() {
 }
 
 List<Locale> list = const [
-  Locale("af"),
-  Locale("am"),
-  Locale("ar"),
-  Locale("az"),
-  Locale("be"),
-  Locale("bg"),
-  Locale("bn"),
-  Locale("bs"),
-  Locale("ca"),
-  Locale("cs"),
-  Locale("da"),
-  Locale("de"),
-  Locale("el"),
-  Locale("en"),
-  Locale("es"),
-  Locale("et"),
-  Locale("fa"),
-  Locale("fi"),
-  Locale("fr"),
-  Locale("gl"),
-  Locale("ha"),
-  Locale("he"),
-  Locale("hi"),
-  Locale("hr"),
-  Locale("hu"),
-  Locale("hy"),
-  Locale("id"),
-  Locale("is"),
-  Locale("it"),
-  Locale("ja"),
-  Locale("ka"),
-  Locale("kk"),
-  Locale("km"),
-  Locale("ko"),
-  Locale("ku"),
-  Locale("ky"),
-  Locale("lt"),
-  Locale("lv"),
-  Locale("mk"),
-  Locale("ml"),
-  Locale("mn"),
-  Locale("ms"),
-  Locale("nb"),
-  Locale("nl"),
-  Locale("nn"),
-  Locale("no"),
-  Locale("pl"),
-  Locale("ps"),
-  Locale("pt"),
-  Locale("ro"),
-  Locale("ru"),
-  Locale("sd"),
-  Locale("sk"),
-  Locale("sl"),
-  Locale("so"),
-  Locale("sq"),
-  Locale("sr"),
-  Locale("sv"),
-  Locale("ta"),
-  Locale("tg"),
-  Locale("th"),
-  Locale("tk"),
-  Locale("tr"),
-  Locale("tt"),
-  Locale("uk"),
-  Locale("ug"),
-  Locale("ur"),
-  Locale("uz"),
-  Locale("vi"),
-  Locale("zh")
+  Locale('af'), // Afrikaans
+  Locale('am'), // Amharic
+  Locale('ar'), // Arabic
+  Locale('az'), // Azerbaijani
+  Locale('be'), // Belarusian
+  Locale('bg'), // Bulgarian
+  Locale('bn'), // Bengali
+  Locale('bs'), // Bosnian
+  Locale('ca'), // Catalan
+  Locale('cs'), // Czech
+  Locale('da'), // Danish
+  Locale('de'), // German
+  Locale('el'), // Greek
+  Locale('en'), // English
+  Locale('es'), // Spanish
+  Locale('et'), // Estonian
+  Locale('fa'), // Persian
+  Locale('fi'), // Finnish
+  Locale('fr'), // French
+  Locale('gl'), // Galician
+  Locale('ha'), // Hausa
+  Locale('he'), // Hebrew
+  Locale('hi'), // Hindi
+  Locale('hr'), // Croatian
+  Locale('hu'), // Hungarian
+  Locale('hy'), // Armenian
+  Locale('id'), // Indonesian
+  Locale('is'), // Icelandic
+  Locale('it'), // Italian
+  Locale('ja'), // Japanese
+  Locale('ka'), // Georgian
+  Locale('kk'), // Kazakh
+  Locale('km'), // Khmer
+  Locale('ko'), // Korean
+  Locale('ku'), // Kurdish
+  Locale('ky'), // Kyrgyz
+  Locale('lt'), // Lithuanian
+  Locale('lv'), // Latvian
+  Locale('mk'), // Macedonian
+  Locale('ml'), // Malayalam
+  Locale('mn'), // Mongolian
+  Locale('ms'), // Malay
+  Locale('nb'), // Norwegian Bokmål
+  Locale('nl'), // Dutch
+  Locale('nn'), // Norwegian Nynorsk
+  Locale('no'), // Norwegian
+  Locale('pl'), // Polish
+  Locale('ps'), // Pashto
+  Locale('pt'), // Portuguese
+  Locale('ro'), // Romanian
+  Locale('ru'), // Russian
+  Locale('sd'), // Sindhi
+  Locale('sk'), // Slovak
+  Locale('sl'), // Slovenian
+  Locale('so'), // Somali
+  Locale('sq'), // Albanian
+  Locale('sr'), // Serbian
+  Locale('sv'), // Swedish
+  Locale('ta'), // Tamil
+  Locale('tg'), // Tajik
+  Locale('th'), // Thai
+  Locale('tk'), // Turkmen
+  Locale('tr'), // Turkish
+  Locale('tt'), // Tatar
+  Locale('uk'), // Ukrainian
+  Locale('ug'), // Uyghur
+  Locale('ur'), // Urdu
+  Locale('uz'), // Uzbek
+  Locale('vi'), // Vietnamese
+  Locale('zh'), // Chinese
 ];
 
 // Wrapper widget to manage app state
