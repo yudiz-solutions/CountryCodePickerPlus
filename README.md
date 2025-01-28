@@ -84,6 +84,96 @@ the `CountryCodePickerMode` property.
 
 ---
 
+## 🌐 Internationalization (i18n)
+
+Add localization support to your Country Code Picker by including `CountryLocalizations.delegate` in your app delegates.
+
+### Basic Setup
+
+```_dart
+MaterialApp(
+  // Add supported locales
+  supportedLocales: const [
+    Locale('af'), // Afrikaans
+    Locale('am'), // Amharic
+    Locale('ar'), // Arabic
+    Locale('az'), // Azerbaijani
+    Locale('be'), // Belarusian
+    Locale('bg'), // Bulgarian
+    Locale('bn'), // Bengali
+    Locale('bs'), // Bosnian
+    Locale('ca'), // Catalan
+    Locale('cs'), // Czech
+    Locale('da'), // Danish
+    Locale('de'), // German
+    Locale('el'), // Greek
+    Locale('en'), // English
+    Locale('es'), // Spanish
+    Locale('et'), // Estonian
+    Locale('fa'), // Persian
+    Locale('fi'), // Finnish
+    Locale('fr'), // French
+    Locale('gl'), // Galician
+    Locale('ha'), // Hausa
+    Locale('he'), // Hebrew
+    Locale('hi'), // Hindi
+    Locale('hr'), // Croatian
+    Locale('hu'), // Hungarian
+    Locale('hy'), // Armenian
+    Locale('id'), // Indonesian
+    Locale('is'), // Icelandic
+    Locale('it'), // Italian
+    Locale('ja'), // Japanese
+    Locale('ka'), // Georgian
+    Locale('kk'), // Kazakh
+    Locale('km'), // Khmer
+    Locale('ko'), // Korean
+    Locale('ku'), // Kurdish
+    Locale('ky'), // Kyrgyz
+    Locale('lt'), // Lithuanian
+    Locale('lv'), // Latvian
+    Locale('mk'), // Macedonian
+    Locale('ml'), // Malayalam
+    Locale('mn'), // Mongolian
+    Locale('ms'), // Malay
+    Locale('nb'), // Norwegian Bokmål
+    Locale('nl'), // Dutch
+    Locale('nn'), // Norwegian Nynorsk
+    Locale('no'), // Norwegian
+    Locale('pl'), // Polish
+    Locale('ps'), // Pashto
+    Locale('pt'), // Portuguese
+    Locale('ro'), // Romanian
+    Locale('ru'), // Russian
+    Locale('sd'), // Sindhi
+    Locale('sk'), // Slovak
+    Locale('sl'), // Slovenian
+    Locale('so'), // Somali
+    Locale('sq'), // Albanian
+    Locale('sr'), // Serbian
+    Locale('sv'), // Swedish
+    Locale('ta'), // Tamil
+    Locale('tg'), // Tajik
+    Locale('th'), // Thai
+    Locale('tk'), // Turkmen
+    Locale('tr'), // Turkish
+    Locale('tt'), // Tatar
+    Locale('uk'), // Ukrainian
+    Locale('ug'), // Uyghur
+    Locale('ur'), // Urdu
+    Locale('uz'), // Uzbek
+    Locale('vi'), // Vietnamese
+    Locale('zh'), // Chinese
+  ],
+  // Add localization delegates
+  localizationsDelegates: const [
+    CountryLocalizations.delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ],
+  // ... other MaterialApp properties
+)
+```
 ## PhoneInputField Widget
 
 This widget allows users to enter a phone number with a country code. It validates the phone number
