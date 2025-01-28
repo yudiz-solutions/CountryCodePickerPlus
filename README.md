@@ -209,6 +209,17 @@ debugPrint('Invalid phone number');
 This section describes the `PhoneInputField` widget with its features and provides a sample code
 snippet on how to use it.
 
+## 📱 Supported Platforms
+
+<div style="overflow-x: auto;">
+
+| Mobile Application | Desktop Application | Web Application |
+|:-----------------:|:-------------------:|:---------------:|
+| <img src="https://raw.githubusercontent.com/yudiz-solutions/CountryCodePickerPlus/main/screenshot/mobile-app.png" alt="Mobile Screenshot" width="250"/> | <img src="https://raw.githubusercontent.com/yudiz-solutions/CountryCodePickerPlus/main/screenshot/desktop-app.png" alt="Desktop Screenshot" width="400"/> | <img src="https://raw.githubusercontent.com/yudiz-solutions/CountryCodePickerPlus/main/screenshot/web-app.png" alt="Web Screenshot" width="400"/> |
+| ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white) | ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) | ![Web](https://img.shields.io/badge/Web-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white) |
+
+</div>
+
 ---
 
 ## Contributions
